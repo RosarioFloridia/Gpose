@@ -1,0 +1,32 @@
+@keyframes fade-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes grow-left {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.herosection {
+    height: 100%;
+}
+
+.agent-1, .agent-2 {
+  opacity: 0;
+  animation: fade-in-top ease 1s forwards;
+}
+
+.agent-2 {
+  animation-delay: 0.8s;
+}
