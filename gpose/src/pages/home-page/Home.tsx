@@ -1,4 +1,4 @@
-import HeroSection from "../../componets/heroSection/HeroSection.tsx"
+import HeroSection from "./title-section/HeroSection.tsx"
 import Navbar from "../../componets/navbar/Navbar.tsx"
 
 function HomePage() {

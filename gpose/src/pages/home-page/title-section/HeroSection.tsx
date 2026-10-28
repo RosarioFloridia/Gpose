@@ -1,6 +1,6 @@
 
 import "./HeroSection.css"
-import type { HeroSectionProps } from "../../types/HeroSection.type";
+import type { HeroSectionProps } from "../../../types/HeroSection.type";
 
 function HeroSection({className, text, title}: HeroSectionProps) {
     return (
