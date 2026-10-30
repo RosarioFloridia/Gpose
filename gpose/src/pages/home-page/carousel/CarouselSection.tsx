@@ -1,9 +1,22 @@
 import Carousel from "./carousel-loop";
+import Placeholder from "@/assets/images/Placeholder.png"
+
+const images = [
+    {src: Placeholder, alt: "Placeholder"},
+    {src: Placeholder, alt: "Placeholder"},
+    {src: Placeholder, alt: "Placeholder"},
+    {src: Placeholder, alt: "Placeholder"},
+    {src: Placeholder, alt: "Placeholder"},
+    {src: Placeholder, alt: "Placeholder"},
+    {src: Placeholder, alt: "Placeholder"}
+]
 
 function CarouselSection() {
     return (
         <>
-            <Carousel gap={16} duration={36} items={["Card 1", "Card 2", "Card 3", "Card 4", "Card 5", "Card 6","Card 7","Card 8"]}/>
+            <Carousel gap={16} duration={36} items={images.map((img) => (
+                <img src={img.src} alt={img.alt} draggable={false} />
+            ))}/>
         </>
     )
 }
